@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Know More</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+          padding: 10px;
+          text-align: center;
+          background: #000000;
+          color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+          font-size: 30px;
+        }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: sticky;
+          position: -webkit-sticky;
+          top: 0;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+        }
+
+
+        /* Right-aligned link */
+        .navbar a.right {
+          float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+          background-color: #666;
+          color: white;
+        }
+
+        /* Column container */
+        .row {  
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+          -ms-flex: 30%; /* IE10 */
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+
+        /* Main column */
+        .main {   
+          -ms-flex: 70%; /* IE10 */
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
+
+        /* image */
+        .img {
+          background-color: rgb(0, 0, 0);
+          width: 100%;
+          padding: 20px;
+        }
+        .imgnews {
+          background-color: rgb(0, 0, 0);
+          padding: 5px;
+          width: 40%;
+        }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: rgb(1, 0, 0);
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+          .row {   
+            flex-direction: column;
+          }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .navbar a {
+            float: none;
+            width: 100%;
+          }
+        }
+        .logo {
+          display: flex;
+          justify-content: left;
+          align-items: left;
+        }
+
+        .logo img {
+          width: 180px;
+          border-radius: 50px;
+        }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="img">
+      <img src= "image/logo.png">
+    </div>
+  </div>
+
+  <div class="navbar">
+    <a href="#" class="active">Know More About Facial Recognition</a>
+    <a href="CriminalCatch.html">Live Stream</a>
+    <a href="index.html" class="right">Go Back</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>How AI Facial Recognition Technology Identifies Criminals?</h2>
+      <img src="image/FaceRecog.jpg" alt="Criminal catch" style="width:100%">
+        <p>Any human being is characterized by her or his distinctive identity. The face of a human being is counted to be unique along with other physical features. It is a foremost quality that enables an individual to interact with others. With science and technology improving day by day the recognition of face has gained new dimensions. </p>
+        <p>Nowadays, recognition of a face is carried out by facial recognition technology. It is an approach through which an individual is verified or identified from various digital sources, like the image or video. The face of an individual includesfacial contours which are the main source for analyzing and comparing for identification.</p>
+        <p>At the present time, the AI technology of facial recognition is comprehensively being applied for surveillance. It helps in detectingindividuals or groups that need close surveillance, usually for lawful cause.AI Facial Recognition Technology can identify criminals at the scene of an event. It can further help in recognizing those criminals who roam free. In another way, it can be a great factor to make the cities safer. This technology makes possible monitoring of real-time data. It does so by capturing an image or video and then analyzes it and identifies it.</p>
+        <a href="https://www.innefu.com/blog/how-ai-facial-recognition-technology-identify-criminals">Read More..</a>
+       <br>
+        <div>
+          <img class="center" src="image/facedetect.jpg" alt="Criminal catch" style="width:70%">
+        </div>
+        
+    </div>
+
+
+    <div class="main">
+      
+      <h2>First case in Delhi solved with face recognition technology</h2>
+      <h5>TNN / Updated: Aug 4, 2020, 11:51 IST</h5>
+      <div>
+        <img class="imgnews center" src="image/news1.jpg"  alt="Crime news Image" >
+      </div>
+      <div>
+          <p>NEW DELHI: used the  used the facial recognition system to track down and arrest three criminals within hours of their dodging a police team near Pitampura</p>
+          <p> Police scanned 150 CCTV cameras and sent the feed to the crime records officer to identify the criminals using the facial recognition system. One of the bikers turned out to be Amit, a notorious snatcher, who was arrested earlier in cases of robbery. </p>
+        <a href="https://timesofindia.indiatimes.com/topic/facial-recognition-system">Read More..</a>
+      </div>
+
+      <br>
+
+      <h2>How Facial Recognition Is Becoming The Indian Government’s New Best Friend</h2>
+      <h5>Published on January 9, 2020</h5>
+        <div>
+          <img class="imgnews center" src="image/news2.jpg"  alt="News Image" >
+        </div>
+          <p>From hovering drones to hawk-eyed CCTV cameras, Indians by 2020 have become used to being surveilled. Facial recognition, one of the booming, yet controversial technologies, is being harnessed by the Government on a large scale.</p>
+          <p>Facial Recognition has aided in identifying the perpetrators of the JNU attack(2020), as well as screening the crowd at political rallies, identifying and apprehending criminals, and assisting the centre police in detecting terrorists and criminal elements during the celebration of Republic Day.</p>
+         <a href="https://analyticsindiamag.com/how-facial-recognition-is-becoming-the-indian-governments-new-best-friend/">Read More..</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <p style="color:white">For Mircrosoft Engage Program'22</p>
+      <p style="color:white">For any query, <a href="mailto:kanikakj07@gmail.com">Contact</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style type="text/css">
+        body{
+              width: 100%;
+              background: url(image/img13.jpg) ;
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+
+        
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face Recognition Microsoft Engage</title>
+    
+    <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
+    <link rel="stylesheet" href="css/welcome.css">
+    <link  rel="stylesheet" href="css/font.css">
+    
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        canvas{
+            position: absolute;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          
+          .button1 {
+            background-color: rgb(22, 21, 21); 
+            color: rgb(250, 249, 249); 
+            border: 2px solid #ffffff;
+          }
+          .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="index.html" class="button button1 center">GO BACK</a>
+    </p>
+    <!--Video Streaming-->
+    <video id="videoInput" width="620" height="550" muted controls>
+
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

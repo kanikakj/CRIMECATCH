@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>CrimeCatch</title>
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+ 
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+        .leftnav {
+            width: 30%;
+            text-align: left;
+        }
+ 
+        .firstsection {
+            background-color: rgb(5, 53, 84);
+            height: 100px;
+        }
+ 
+        .secondsection {
+            background-color: rgb(5, 53, 84);
+            height: 400px;
+        }
+ 
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 30%;
+        }
+ 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 10px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 0px 65px;
+        }
+ 
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+ 
+        .text-footer {
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        .button {
+            background-color: #000000; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          
+          .button1 {
+            background-color: rgb(22, 21, 21); 
+            color: rgb(250, 249, 249); 
+            border: 2px solid #ffffff;
+          }
+
+          * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.2s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+            /* Caption text */
+            .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+            background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+            }
+            .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 100%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+              }
+              
+              .container:hover .overlay {
+                opacity: 1;
+              }
+              * {box-sizing: border-box;}
+
+                .container {
+                position: relative;
+                }
+
+                .image {
+                display: block;
+                width: 100%;
+                height: auto;
+                }
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "image/logo.png">
+            </div>
+            <li><a href="#About Project">About Project</a></li>
+            <li><a href="CriminalCatch.html">Live Stream</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <a href="KnowMore.html" class="button btn"> Know More </a>
+        </div>
+    </nav>
+    
+
+    
+    
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web"style="color:white;">CRIMECATCH</h1>
+                <p class="text-small" style="color:rgb(225, 215, 215);">
+                    It&apos;s ALL About YOU!
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade container">
+              <img src="image/img.jpg" style="width:100%">
+              <div class="overlay">Criminal Detection and Recognition</div>
+            </div>
+            
+            <div class="mySlides fade container">
+              <img src="image/img12.jpg" style="width:100%">
+              <div class="overlay">Wanted Criminals Detection</div>
+            </div>
+            
+            <div class="mySlides fade container">
+              <img src="image/img13.jpg" style="width:100%">
+              <div class="overlay">Facial Recognition</div>
+              
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+                </script>
+            </script>
+    </section>
+
+
+
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+
+                <h1 class="text-big center" id="steps" style="color:white;">
+                    How To Detect 
+                </h1>
+                <p class="text-small">
+                    <ol>
+                        <li>Click on <b>Live Stream</b></li>
+                        <li>Allow access to the webcam</li>
+                        <li>Play the video stream</li>
+                        <li>Face Recognition will activate.</li>
+                        <ul>
+                            <li>Criminal: If the person is recognised and his or her name, as well as the crime committed, is displayed</li>
+                            <li>Safe : If the person is identified as unknown</li>
+                        </ul>
+                    </ol>
+                </p>
+                <br>
+                <p>
+                <a href="CriminalCatch.html" class="button button1 ">Live Stream</a>
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big center" id="About Project">About Project</h1>
+            <br>
+            <p class="sectionSubTag text-small center">
+                <b>CRIMECATCH</b> is used to discover criminals, prevent crime, and apprehend wanted perpetrators. As the world facilitates, the number of crimes goes through the roof, making fingerprint detection more difficult since thieves are sophisticated enough to obliterate evidence. <b>CRIMECATCH</b> assists in detecting criminals around you in order to provide you with a secure environment to live in and to avoid crime. Detection assists you in determining who is secure to let into your safe environment.
+            </p>
+ 
+ 
+        </div>
+ 
+        
+    </section>
+ 
+    <footer class="background">
+        <p class="text-footer" style="color:white">
+            For Mircrosoft Engage Program'22
+        </p>
+     
+    </footer>
+</body>
+ 
+</html>
