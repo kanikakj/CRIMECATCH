@@ -9,19 +9,17 @@ A basic app for Criminal Detection on client side(browser) via WebCam and Other 
 
 Prerequisites to run the app in local environment
 
-<b>step 1:</b>
-Install NodeJS
+<b>step 1: </b>Install NodeJS
 
-<b>Step 2:</b>
-Initialize npm and get all the required npm packages for the project.
-
-<b>Congratulations!</b> You are good to GO now.
+<b>Step 2: </b>Initialize npm and get all the required npm packages for the project.
 
 <b>Note:</b>
 For best performance, if you have a dedicated graphic card on your system enable that to be used by your browser. By defualt browser uses the internal graphic of the system which might not work best for this app.
 
 
-<b>Link to deployed project</b> : https://crimecatch.herokuapp.com/
+<b>I) Link to Video Demo</b> : https://www.youtube.com/watch?v=yIJnPpuveF4
+
+<b>II) Link to deployed project</b> : https://crimecatch.herokuapp.com/
 
 NOTE: The modules take few minutes to load for the first time. Try to refresh the page in case of delay.
 
