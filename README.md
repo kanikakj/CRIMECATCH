@@ -1,5 +1,5 @@
 # Criminal Catch: Face-Detection
-A basic app for Criminal Detection on client side(browser) via WebCam and Other Video Sources using face-api.js which is a wrapper around TensorFlowJS. This project touches on the basics of face detections and is helpfull for all those people who wants to know how Face recognition works.
+A simple app for criminal detection on the client side (browser) utilising WebCam and Other Video Sources using face-api.js, a TensorFlowJS wrapper. This project covers the fundamentals of face detection and is useful for anyone interested in learning how face recognition works.
 
 <b>Some of the Major technologies used:</b>
 1. <a href="https://nodejs.org/" target="_blank">NodeJS</a>
