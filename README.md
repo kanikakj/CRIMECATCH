@@ -22,7 +22,8 @@ For best performance, if you have a dedicated graphic card on your system enable
 
 
 <b>Link to deployed project</b> : https://crimecatch.herokuapp.com/
-NOTE: The modules takes few minutes to load for the first time. Try to refresh the page in case of delay.
+
+NOTE: The modules take few minutes to load for the first time. Try to refresh the page in case of delay.
 
 Few snapshot of the project:
 
